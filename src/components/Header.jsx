@@ -11,6 +11,7 @@ function Header() {
         title="Hamburger menu"
         className="hamburger"
         onClick={() => setMenuOpened(!menuOpened)}
+        aria-label="On Click"
       >
         <img src="/hamburger.svg" alt="Hamburger menu" />
       </button>
