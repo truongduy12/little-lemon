@@ -6,6 +6,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import About from "./components/About";
 import Home from "./pages/Home";
 import Error from "./pages/Error";
+import Reservation from "./pages/Reservation";
+import ConfirmedBooking from "./pages/ConfirmedBooking";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -15,6 +17,8 @@ root.render(
         <Route path="/" element={<App />}>
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
+          <Route path="reservation" element={<Reservation />} />
+          <Route path="confirmed" element={<ConfirmedBooking />} />
           <Route path="*" element={<Error />} />
         </Route>
       </Routes>
